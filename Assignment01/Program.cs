@@ -224,6 +224,13 @@ namespace Assignment01
                 It allows the type parameter to be used only in output positions to return values not Add.
             */
             #endregion
+            #region Question16
+            /*
+              Contravariance allows to use a less derived generic type where a more derived generic type is expected.
+              The in keyword is used to declare a contravariant type parameter.
+              It allows the type parameter to be used only in input positions , not return value.
+            */
+            #endregion
         }
     }
 
