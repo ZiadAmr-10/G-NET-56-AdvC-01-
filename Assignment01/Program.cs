@@ -13,19 +13,37 @@
              */
             #endregion
             #region Question02
-    /*
-         internal class Container<T>
-        {
-           public T Value { get; set; }
-           public void Add(T V)
-           {
-               Value = V;
-           }
-           public T Get() => Value;
-        }  
-    */
+            /*
+                 internal class Container<T>
+                {
+                   public T Value { get; set; }
+                   public void Add(T V)
+                   {
+                       Value = V;
+                   }
+                   public T Get() => Value;
+                }  
+            */
+            #endregion
+            #region Question03
+     /*      
+            internal class Pair<TKey,TValue>
+            {
+                public TKey Key { get; set; }
+                public TValue Value { get; set; }
+                public Pair(TKey key, TValue value)
+                {
+                    Key = key;
+                    Value = value;
+                }
+                public void Print()
+                {
+                    Console.WriteLine($"Key is : {Key},Value is : {Value}");
+                }
+            }
+     */
             #endregion
         }
     }
-
+ 
 }
