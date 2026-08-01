@@ -118,17 +118,38 @@ namespace Assignment01
              */
             #endregion
             #region Question09
-    /*
-             new() is constructor constraint ,requires T to have a public Parameterless Constructor ,
-             this allows creating objects using new T().
-             Example : 
-             public class Factory<T> where T :new()
+            /*
+                     new() is constructor constraint ,requires T to have a public Parameterless Constructor ,
+                     this allows creating objects using new T().
+                     Example : 
+                     public class Factory<T> where T :new()
+                     {
+                        public T Create() 
+                        {
+                        return new T();
+                        } 
+                     }
+           */
+            #endregion
+            #region Question10
+     /*
+         The interface constraint is used when T is required to implement a specific interface,this allows calling interface members safely.
+           Example : 
+        public class FindMax<T> where T : IComparable<T>
+        {
+           public T FindMax(T[] array)
              {
-                public T Create() 
+                 T max = array[0];
+                foreach (T item in array)
+            {
+                    if (item.CompareTo(max) > 0)
                 {
-                return new T();
-                } 
+                     max = item;
+                }
+            }
+               return max;
              }
+        }
    */
             #endregion
         }
