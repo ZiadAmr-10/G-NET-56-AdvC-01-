@@ -1,4 +1,6 @@
-﻿namespace Assignment01
+﻿using System.Numerics;
+
+namespace Assignment01
 {
     internal class Program
     {
@@ -57,6 +59,25 @@
                       }
                   }
              */
+            #endregion
+            #region Question05
+        /*
+               internal static class Utility
+          {
+               public static T FindMax<T>(T[] arr) where T : INumber<T>
+               {
+                   T max = arr[0];
+                   for (int i = 1;i<arr.Length;i++)
+                   {
+                       if (arr[i] > max)
+                       {
+                           max = arr[i];
+                       }
+                   }
+                 return max;
+               }
+           }  
+        */
             #endregion
         }
     }
