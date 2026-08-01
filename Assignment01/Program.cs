@@ -101,7 +101,22 @@ namespace Assignment01
                    public T Value { get; set; }
                  }
              */
-            #endregion  
+            #endregion
+            #region Question08
+            /*
+               The Class constraint is a primary constraint, it specifies that the type parameter must be a Reference type.
+                Example : 
+                public class Cache<T> where T : class
+                {
+                 private T? cachedItem;
+                 public T? Get() => cachedItem;
+                 public void Set(T item)
+                 {
+                 cachedItem = item;
+                 }
+                }      
+             */
+            #endregion
         }
     }
 
