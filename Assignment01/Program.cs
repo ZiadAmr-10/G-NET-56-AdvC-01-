@@ -132,25 +132,45 @@ namespace Assignment01
            */
             #endregion
             #region Question10
-     /*
-         The interface constraint is used when T is required to implement a specific interface,this allows calling interface members safely.
-           Example : 
-        public class FindMax<T> where T : IComparable<T>
-        {
-           public T FindMax(T[] array)
+            /*
+                The interface constraint is used when T is required to implement a specific interface,this allows calling interface members safely.
+                  Example : 
+               public class FindMax<T> where T : IComparable<T>
+               {
+                  public T FindMax(T[] array)
+                    {
+                        T max = array[0];
+                       foreach (T item in array)
+                   {
+                           if (item.CompareTo(max) > 0)
+                       {
+                            max = item;
+                       }
+                   }
+                      return max;
+                    }
+               }
+          */
+            #endregion
+            #region Question11
+    /*
+             Base Class Constraint is restricts T to a specific base class or any class derived from it.
+             Example : 
+             public class Employee
              {
-                 T max = array[0];
-                foreach (T item in array)
-            {
-                    if (item.CompareTo(max) > 0)
-                {
-                     max = item;
-                }
-            }
-               return max;
              }
-        }
-   */
+             public class Manager : Employee
+             {
+             }
+             public class Repository<T> where T : Employee
+             {
+             }
+             Valid : 
+             Repository<Employee>
+             Repository<Manager>
+             invalid :
+             Repository<car>
+    */
             #endregion
         }
     }
