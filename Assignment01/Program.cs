@@ -12,6 +12,20 @@
             Better performance ,reduce duplicate code
              */
             #endregion
+            #region Question02
+    /*
+         internal class Container<T>
+        {
+           public T Value { get; set; }
+           public void Add(T V)
+           {
+               Value = V;
+           }
+           public T Get() => Value;
+        }  
+    */
+            #endregion
         }
     }
+
 }
