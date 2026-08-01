@@ -245,6 +245,11 @@ namespace Assignment01
               each closed generic type has its own separate static members.
              */
             #endregion
+            #region Question19
+            /*
+             A generic class can be inherited by another generic class or by a non-generic class. 
+            */
+            #endregion
         }
     }
 
