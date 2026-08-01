@@ -217,6 +217,13 @@ namespace Assignment01
              } 
             */
             #endregion
+            #region Question15
+            /*
+               Covariance allows to use more derived generic type where a less derived generic is expected
+                out is used to declare a covariant type parameter.
+                It allows the type parameter to be used only in output positions to return values not Add.
+            */
+            #endregion
         }
     }
 
