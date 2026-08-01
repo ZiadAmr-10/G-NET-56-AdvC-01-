@@ -44,6 +44,20 @@
                 .}
             */
             #endregion
+            #region Question04
+            /*
+                A generic method allows the same method to work with different data types.
+                  internal static class Utility
+                 {
+                      public static void Swap<T>(ref T x, ref T y)
+                      {
+                          T temp = x;
+                          x = y;
+                          y = temp;
+                      }
+                  }
+             */
+            #endregion
         }
     }
 
