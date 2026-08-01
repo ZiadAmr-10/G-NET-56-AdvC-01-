@@ -61,23 +61,37 @@ namespace Assignment01
              */
             #endregion
             #region Question05
-        /*
-               internal static class Utility
-          {
-               public static T FindMax<T>(T[] arr) where T : INumber<T>
-               {
-                   T max = arr[0];
-                   for (int i = 1;i<arr.Length;i++)
+            /*
+                   internal static class Utility
+              {
+                   public static T FindMax<T>(T[] arr) where T : INumber<T>
                    {
-                       if (arr[i] > max)
+                       T max = arr[0];
+                       for (int i = 1;i<arr.Length;i++)
                        {
-                           max = arr[i];
+                           if (arr[i] > max)
+                           {
+                               max = arr[i];
+                           }
                        }
+                     return max;
                    }
-                 return max;
-               }
-           }  
-        */
+               }  
+            */
+            #endregion
+            #region Question06
+            /*   A generic interface is a contract using one or more type parameters,
+                  Generic interfaces commonly used to create reusable code , that provide type safe and work with 
+                  different data types .
+                  public interface IRepository<T,TKey>
+                  {
+                   T? GetById(TKey id);
+                   IEnumerable<T> GetAll();
+                   void Add(T entity);
+                   void Update(T entity);
+                   void Delete(TKey id);
+                  }
+            */
             #endregion
         }
     }
