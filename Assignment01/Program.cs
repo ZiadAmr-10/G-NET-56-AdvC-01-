@@ -191,6 +191,12 @@ namespace Assignment01
                }
              */
             #endregion
+            #region Question13
+            /* The default keyword returns the default value of a type,
+             When used with a generic type parameter, 
+             the compiler determines the appropriate default value based on the actual type used.
+            */
+            #endregion
         }
     }
 
