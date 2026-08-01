@@ -117,6 +117,20 @@ namespace Assignment01
                 }      
              */
             #endregion
+            #region Question09
+    /*
+             new() is constructor constraint ,requires T to have a public Parameterless Constructor ,
+             this allows creating objects using new T().
+             Example : 
+             public class Factory<T> where T :new()
+             {
+                public T Create() 
+                {
+                return new T();
+                } 
+             }
+   */
+            #endregion
         }
     }
 
