@@ -93,6 +93,15 @@ namespace Assignment01
                   }
             */
             #endregion
+            #region Question07
+            /*  The struct constraint is a primary constraint, it specifies that the type parameter must be a value type.
+                 Example : 
+                 public class ValueStorage<T> where T : struct
+                 {
+                   public T Value { get; set; }
+                 }
+             */
+            #endregion  
         }
     }
 
