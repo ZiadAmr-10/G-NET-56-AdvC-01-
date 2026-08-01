@@ -153,24 +153,43 @@ namespace Assignment01
           */
             #endregion
             #region Question11
-    /*
-             Base Class Constraint is restricts T to a specific base class or any class derived from it.
-             Example : 
-             public class Employee
-             {
-             }
-             public class Manager : Employee
-             {
-             }
-             public class Repository<T> where T : Employee
-             {
-             }
-             Valid : 
-             Repository<Employee>
-             Repository<Manager>
-             invalid :
-             Repository<car>
-    */
+            /*
+                     Base Class Constraint is restricts T to a specific base class or any class derived from it.
+                     Example : 
+                     public class Employee
+                     {
+                     }
+                     public class Manager : Employee
+                     {
+                     }
+                     public class Repository<T> where T : Employee
+                     {
+                     }
+                     Valid : 
+                     Repository<Employee>
+                     Repository<Manager>
+                     invalid :
+                     Repository<car>
+            */
+            #endregion
+            #region Question12
+            /*  
+               Can applied to the same type parameter
+               Example:
+               public interface IEntity
+               {
+                Guid Id { get; set; }
+               }
+               public class EntityManager<T>  where T : class, IEntity, new()
+               {
+                   public T Create()
+                {
+                   T entity = new T();
+                   entity.Id = Guid.NewGuid();
+                   return entity;
+                }
+               }
+             */
             #endregion
         }
     }
