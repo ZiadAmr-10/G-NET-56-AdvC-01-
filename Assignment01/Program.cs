@@ -231,6 +231,14 @@ namespace Assignment01
               It allows the type parameter to be used only in input positions , not return value.
             */
             #endregion
+            #region Question17
+            /*
+              Covariance (out) allows using a more derived generic type where a less derived generic type is expectedو
+                 it uses T only in output positions return values.
+              Contravariance (in) allows using a less derived generic type where a more derived generic type is expected,
+                 it uses T only in input positions .
+            */
+            #endregion
         }
     }
 
