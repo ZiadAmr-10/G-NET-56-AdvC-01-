@@ -197,6 +197,26 @@ namespace Assignment01
              the compiler determines the appropriate default value based on the actual type used.
             */
             #endregion
+            #region Question14
+            /*
+                internal class SafeList<T>
+             {
+                 private readonly List<T> _list=new List<T>();
+                 public void Add(T value)
+                 {
+                    _list.Add(value);
+                 }
+                public T GetValue(int index)
+                 {
+                 if (index >= 0 && index < _list.Count)
+                 {
+                     return _list[index];
+                 }
+                    return default;
+                 }
+             } 
+            */
+            #endregion
         }
     }
 
