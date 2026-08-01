@@ -239,6 +239,12 @@ namespace Assignment01
                  it uses T only in input positions .
             */
             #endregion
+            #region Question18
+            /*
+             Static members in a generic type are shared only among objects of the same closed generic type,
+              each closed generic type has its own separate static members.
+             */
+            #endregion
         }
     }
 
