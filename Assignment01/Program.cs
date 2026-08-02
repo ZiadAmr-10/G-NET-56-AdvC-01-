@@ -250,6 +250,52 @@ namespace Assignment01
              A generic class can be inherited by another generic class or by a non-generic class. 
             */
             #endregion
+            #region Question20
+            /*
+             internal class CacheItem<TValue>
+              {
+                  public TValue Value { get; set; }
+                  public DateTime Expiration { get; set; }
+              }
+              
+              internal class Cache<TKey, TValue>
+             {
+                  private readonly Dictionary<TKey, CacheItem<TValue>> _cache = new();
+              
+                  public void Add(TKey key, TValue value, TimeSpan duration)
+                  {
+                      _cache[key] = new CacheItem<TValue>
+                      {
+                          Value = value,
+                          Expiration = DateTime.Now.Add(duration)
+                      };
+                  }
+              
+                  public TValue? Get(TKey key)
+                  {
+                      if (_cache.TryGetValue(key, out CacheItem<TValue>? item))
+                      {
+                          if (item.Expiration > DateTime.Now)
+                              return item.Value;
+              
+                          _cache.Remove(key);
+                      }
+              
+                      return default;
+                  }
+              
+                  public bool Remove(TKey key)
+                  {
+                      return _cache.Remove(key);
+                  }
+              
+                  public bool Contains(TKey key)
+                  {
+                      return _cache.ContainsKey(key);
+                  }
+               }
+             */
+            #endregion
         }
     }
 
